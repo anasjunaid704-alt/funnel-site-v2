@@ -445,6 +445,27 @@
   }
 
   /* RESPONSIVE */
+  #what-i-do, #who-its-for, #who-its-not-for, #results {
+    text-align: center;
+  }
+
+  #what-i-do .eyebrow, #who-its-for .eyebrow, #who-its-not-for .eyebrow, #results .eyebrow {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #what-i-do .section-lead, #who-its-for .section-lead, #results .section-lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service-card { text-align: center; }
+
+  .trait {
+    justify-content: center;
+    text-align: left;
+  }
+
   @media (max-width: 640px) {
     section { padding: 64px 20px; }
     .hero { min-height: 88vh; }
@@ -453,6 +474,17 @@
     .stat-row { grid-template-columns: 1fr; gap: 28px; }
     blockquote { font-size: 1rem; padding: 22px 20px; }
     .cta { padding-top: 72px; padding-bottom: 90px; }
+
+    .service-card::after { display: none; }
+
+    .trait {
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      text-align: center;
+    }
+
+    .trait:hover { padding-left: 4px; }
   }
 </style>
 </head>
